@@ -61,26 +61,35 @@ Python을 활용한 데이터 분석 및 시각화 과정과 Streamlit 기반 �
 * 머신러닝 파이프라인
 * 모델 학습 · 예측 · 평가
 
-#### Classification
-- KNeighborsClassifier
-- Logistic Regression
-- SGDClassifier
-- DecisionTreeClassifier
-- RandomForestClassifier
-- GradientBoostingClassifier
+### Classification
 
-#### Regression
-- Linear Regression
-- KNeighborsRegressor
-- Ridge
-- Lasso
+* KNeighborsClassifier
+* LogisticRegression
+* SGDClassifier
+* DecisionTreeClassifier
+* RandomForestClassifier
+* GradientBoostingClassifier
 
-#### Ensemble Learning
-- Random Forest
-- Gradient Boosting
-- HistGradientBoosting
-- XGBoost
-- LightGBM
+### Regression
+
+* LinearRegression
+* KNeighborsRegressor
+* Ridge
+* Lasso
+
+### Unsupervised Learning
+
+* KMeans
+* PCA
+* Anomaly Detection
+
+### Ensemble Learning
+
+* Random Forest
+* Gradient Boosting
+* HistGradientBoosting
+* XGBoost
+* LightGBM
 
 </details>
 
@@ -94,6 +103,24 @@ Python을 활용한 데이터 분석 및 시각화 과정과 Streamlit 기반 �
 * train_test_split
 * Data Leakage 방지
 * One-Hot Encoding
+* PCA (Dimensionality Reduction)
+
+</details>
+
+<details>
+<summary>Model Optimization</summary>
+
+### Validation
+
+* train_test_split
+* cross_validate
+* K-Fold Cross Validation
+* StratifiedKFold
+
+### Hyperparameter Tuning
+
+* GridSearchCV
+* RandomizedSearchCV
 
 </details>
 
@@ -115,6 +142,12 @@ Python을 활용한 데이터 분석 및 시각화 과정과 Streamlit 기반 �
 * MAE
 * MSE
 
+### Unsupervised Metrics
+
+* Inertia
+* Elbow Method
+* explained_variance_ratio_
+
 </details>
 
 <details>
@@ -127,6 +160,9 @@ Python을 활용한 데이터 분석 및 시각화 과정과 Streamlit 기반 �
 * histogram
 * regression line
 * learning curve
+* cluster visualization
+* PCA 2D visualization
+* elbow curve
 
 ### Plotly
 
@@ -185,6 +221,7 @@ Python을 활용한 데이터 분석 및 시각화 과정과 Streamlit 기반 �
 * 프로젝트 버전 관리
 
 </details>
+
 
 ---
 
@@ -967,6 +1004,104 @@ git push
 - K-Fold 교차 검증
 - GridSearchCV 튜닝
 - 최적 모델 평가
+
+</details>
+
+
+<details>
+<summary>2026-06-01 | 비지도 학습 · K-Means · PCA · 이상 탐지</summary>
+
+### Unsupervised Learning
+
+* 지도학습 vs 비지도학습
+* Label 없는 데이터 학습
+* 패턴 발견
+* 군집화(Clustering)
+* 차원 축소(Dimensionality Reduction)
+* 이상 탐지(Anomaly Detection)
+
+### K-Means
+
+* KMeans
+* Centroid
+* Cluster Assignment
+* Cluster Center Update
+* Iterative Optimization
+* Inertia
+* Cluster Labels
+
+### K-Means Workflow
+
+* 초기화 (Initialization)
+* 배정 (Assignment)
+* 중심 이동 (Update)
+* 반복 (Iteration)
+
+### Cluster Evaluation
+
+* Inertia
+* Elbow Method
+* Optimal K Selection
+
+### Anomaly Detection
+
+* Distance-based Detection
+* Centroid Distance
+* Percentile Threshold
+* Outlier Detection
+
+### PCA
+
+* Principal Component Analysis
+* Dimensionality Reduction
+* Principal Components
+* Feature Compression
+* Noise Reduction
+
+### PCA Metrics
+
+* explained_variance_ratio_
+* components_
+* transform()
+* inverse_transform()
+* n_components
+
+### PCA + K-Means
+
+* PCA 2D Projection
+* Cluster Visualization
+* High Dimension → 2D Reduction
+
+### 실습
+
+* Fruits Dataset 분석
+* 수동 군집화 실습
+* K-Means 군집화
+* Elbow Method 적용
+* 이상 탐지 구현
+* PCA 차원 축소
+* PCA + K-Means 시각화
+
+### 주요 개념 정리
+
+* Unsupervised Learning
+* Clustering
+* Centroid
+* Inertia
+* Elbow Method
+* Anomaly Detection
+* PCA
+* Explained Variance Ratio
+* Dimensionality Reduction
+* Feature Compression
+
+### Git 실습
+
+```bash
+git add .
+git commit -m "feat: 비지도학습 및 PCA 실습 완료"
+git push
+```
 
 </details>
 
