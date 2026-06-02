@@ -54,6 +54,20 @@ Python을 활용한 데이터 분석 및 시각화 과정과 Streamlit 기반 �
 </details>
 
 <details>
+<summary>Data Preprocessing</summary>
+
+### Preprocessing
+
+* StandardScaler
+* PolynomialFeatures
+* train_test_split
+* Data Leakage 방지
+* One-Hot Encoding
+* PCA (Dimensionality Reduction)
+
+</details>
+
+<details>
 <summary>Machine Learning</summary>
 
 ### scikit-learn
@@ -94,16 +108,51 @@ Python을 활용한 데이터 분석 및 시각화 과정과 Streamlit 기반 �
 </details>
 
 <details>
-<summary>Data Preprocessing</summary>
+<summary>Deep Learning</summary>
 
-### Preprocessing
+### Neural Network
 
-* StandardScaler
-* PolynomialFeatures
-* train_test_split
-* Data Leakage 방지
-* One-Hot Encoding
-* PCA (Dimensionality Reduction)
+* Perceptron
+* Multi-Layer Perceptron (MLP)
+* Input Layer
+* Hidden Layer
+* Output Layer
+* Weight (w)
+* Bias (b)
+
+### Activation Functions
+
+* Sigmoid
+* Softmax
+* ReLU
+
+### TensorFlow
+
+* Tensor
+* GPU Acceleration
+* Automatic Differentiation
+
+### Keras
+
+* Sequential API
+* Input Layer
+* Dense Layer
+* compile()
+* fit()
+* evaluate()
+* summary()
+
+### Computer Vision
+
+* sklearn Digits Dataset
+* Fashion MNIST
+* Flatten
+* Multi-Class Classification
+
+### Loss Function
+
+* Cross Entropy
+* Sparse Categorical Crossentropy
 
 </details>
 
@@ -148,6 +197,12 @@ Python을 활용한 데이터 분석 및 시각화 과정과 Streamlit 기반 �
 * Elbow Method
 * explained_variance_ratio_
 
+### Deep Learning Metrics
+
+* Loss
+* Accuracy
+* Cross Entropy
+
 </details>
 
 <details>
@@ -163,6 +218,7 @@ Python을 활용한 데이터 분석 및 시각화 과정과 Streamlit 기반 �
 * cluster visualization
 * PCA 2D visualization
 * elbow curve
+* training history visualization
 
 ### Plotly
 
@@ -201,6 +257,7 @@ Python을 활용한 데이터 분석 및 시각화 과정과 Streamlit 기반 �
 
 * 데이터 분석 실습
 * 머신러닝 실험
+* 딥러닝 실험
 * 시각화 실습
 
 </details>
@@ -1105,3 +1162,141 @@ git push
 
 </details>
 
+
+<details>
+<summary>2026-06-02 | 퍼셉트론 · MLP · TensorFlow · Keras 첫 신경망</summary>
+
+### ML → DL
+
+* Machine Learning vs Deep Learning
+* Feature Engineering
+* Automatic Feature Learning
+* Neural Network 개념
+
+### Perceptron
+
+* Artificial Neuron
+* Weight (w)
+* Bias (b)
+* Weighted Sum
+* np.dot()
+* Perceptron Model
+
+### Sigmoid Function
+
+* Sigmoid Activation
+* Probability Output
+* Binary Classification
+* Decision Boundary
+* Threshold
+
+### Logic Gate
+
+* AND Gate
+* OR Gate
+* XOR Gate
+* Linear Separation
+* Non-linear Problem
+
+### XOR Problem
+
+* Single Layer Perceptron 한계
+* Linear Decision Boundary
+* Non-linear Classification
+* Hidden Layer 필요성
+
+### Multi-Layer Perceptron (MLP)
+
+* Input Layer
+* Hidden Layer
+* Output Layer
+* Feature Learning
+* Deep Neural Network
+
+### Activation Functions
+
+* Sigmoid
+* Softmax
+* ReLU
+* Non-linearity
+
+### TensorFlow
+
+* Tensor
+* Shape
+* Scalar
+* Vector
+* Matrix
+* Multi-dimensional Tensor
+
+### Keras
+
+* Sequential Model
+* Dense Layer
+* Input Layer
+
+### Keras 5-Step Workflow
+
+1. Model Definition
+2. Compile
+3. Fit
+4. Evaluate
+5. Summary
+
+### Image Classification
+
+* sklearn Digits Dataset
+* Logistic Regression vs Dense Layer
+* Multi-Class Classification
+
+### Fashion MNIST
+
+* Fashion MNIST Dataset
+* Flatten
+* Dense(10, softmax)
+* 10-Class Classification
+* Image Classification
+
+### Loss Function
+
+* Cross Entropy
+* Sparse Categorical Crossentropy
+* Loss
+* Accuracy
+
+### 실습
+
+* perceptron() 직접 구현
+* AND Gate 구현
+* OR Gate 구현
+* XOR 문제 분석
+* MLP 구조 이해
+* TensorFlow Tensor 실습
+* Keras 첫 신경망 구현
+* sklearn Digits 분류
+* Fashion MNIST 분류
+* Softmax 확률 확인
+
+### 주요 개념 정리
+
+* Perceptron
+* MLP
+* Sigmoid
+* Softmax
+* ReLU
+* Tensor
+* Dense Layer
+* Sequential
+* Cross Entropy
+* Fashion MNIST
+* Multi-Class Classification
+
+### Git 실습
+
+```bash
+git add .
+git commit -m "feat: 퍼셉트론 및 Keras 첫 신경망 실습 완료"
+git push
+```
+
+</details>
